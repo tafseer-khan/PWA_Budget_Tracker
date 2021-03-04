@@ -1,0 +1,7 @@
+{
+    "name": "PWA_Budget_Tracker",
+    "short_name": "PWA_Budget_Tracker",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "/"
+  }
