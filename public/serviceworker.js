@@ -16,7 +16,7 @@ const DATA_CACHE_NAME = "data-cache-v1";
 self.addEventListener("install", event => {
     event.waitUntil(
       caches
-        .open(STATIC_CACHE)
+        .open(CACHE_NAME)
         .then(cache => cache.addAll(FILES_TO_CACHE))
         .then(() => self.skipWaiting())
     );
@@ -26,7 +26,7 @@ self.addEventListener("install", event => {
 self.addEventListener("install", event => {
     event.waitUntil(
       caches
-        .open(STATIC_CACHE)
+        .open(CACHE_NAME)
         .then(cache => cache.addAll(FILES_TO_CACHE))
         .then(() => self.skipWaiting())
     );
