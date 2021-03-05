@@ -13,10 +13,9 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static(__dirname+ "/public"));
 
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/budget',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/budget',
   {useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
